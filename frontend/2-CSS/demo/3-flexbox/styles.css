@@ -1,0 +1,42 @@
+/*
+    Flexbox container is a block-level element, so it takes up the full width of the page.
+    Flexbox items are inline-level elements, so they only take up the width the content needs.
+        - disply: inline-flex - makes the container an inline-level element, so it only takes up the width the content needs. 
+*/
+
+.flex-container {
+    display: flex;
+    border: 5px solid #000;
+    padding: 2em;
+    width: 750px;
+    
+}
+  
+/*
+    Flexbox items only take up the width the content needs, like an inline element.
+       - To make them take up the full width of the container, we can use flex-grow: 1
+       - To make them take up the full width of the container, but only if there is extra space, we can use flex-grow: 9999
+       - If the content is the same, each item will be the same width.
+       - Items will shrink to fit the container if the content is too big.
+       - Flexbox won't break content to make it fit. 
+       - By default, the width is auto, which means the width is determined by the content.
+       - If you set the width to 100%, it will take up the full width of the container and ignore the content.
+       - The heights are kept the same, so the items will be stretched to fit the container.
+*/
+
+.flex-item {
+    margin: 0.5rem;
+    border: 5px solid #aaa;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5em;
+    /* flex-grow: 1; */
+}
+
+.flex-item:nth-child(3) {
+    background-color: pink;
+    color: black;
+    height: 150px; /* if height is taller than others, rest will stretch too  */
+
+}
+  

@@ -1,0 +1,114 @@
+/************************
+    * Import Google Font
+    ***********************/
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap");
+
+/************************
+    * Reset
+    ***********************/
+
+/* Box sizing rules */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/************************
+    * Default styles
+    ***********************/
+
+body {
+    line-height: 1.5;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+  
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+  
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+  
+.logo {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+  
+  
+/************************
+    * Layout styles
+    ***********************/
+ 
+header {
+    background: black;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 15rem;
+    flex-grow: 1;
+}
+  
+.container {
+    min-height: 100vh; /* 100% of the viewport height */
+    display: flex; /* make the container a flexbox - row */
+    flex-wrap: wrap; /* since container is a flex container, main will wrap under header */
+    gap: 2em; /* space between header and main */
+}
+  
+main {
+    flex-basis: 60%; /* 60% of the container; once container is too small, will wrap */
+    padding: 2em;
+    flex-grow: 9999; /* grow to fill the remaining space */
+}
+  
+main > * {
+    max-width: 60rem;
+}
+  
+/************************
+    * Navigation styles
+    ***********************/
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap; /* wrap items if they don't fit; default will push container to fit */
+    justify-content: center;
+    list-style: none; /* removes default bullets */
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    margin: 0 1em; /* adds space to left and right to have each item per row */
+}
+  
+nav a {
+    color: inherit; /* inherit text color from parent, <header> */
+}
+  
+nav a:hover,
+nav a:focus {
+  color: yellowgreen;
+}

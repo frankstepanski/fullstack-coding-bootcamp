@@ -1,0 +1,39 @@
+/*  https://getbootstrap.com/docs/5.3/customize/sass/ */
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* 
+ 
+  The steps will be:
+    1. Install Bootstrap
+    2. Install sass
+    3. Import Bootstrap into your main.scss file
+    4. Customize Bootstrap's styling
+    5. Compile your main.scss file into a main.css file
+    6. Link your main.css file to your HTML file
+
+  This will import all of Bootstrap's styles, but it will also allow you to override them with your own custom styles.
+    
+    You can also import individual components from Bootstrap, like so:
+    @import "../node_modules/bootstrap/scss/functions";
+    @import "../node_modules/bootstrap/scss/variables";
+    @import "../node_modules/bootstrap/scss/mixins";
+
+    Note: This allows you not to have to import the entire Bootstrap library, but only the parts you need.
+
+*/
+nav ul {
+    margin: 15px;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+}

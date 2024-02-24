@@ -1,0 +1,105 @@
+/************************
+    * Import Google Font
+    ***********************/
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap");
+
+/************************
+    * Reset
+    ***********************/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/************************
+    * Default styles
+    ***********************/
+
+
+/* Set body defaults */
+body {
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/************************
+    * Layout styles
+    ***********************/
+
+.container {
+  padding: 2em 0;
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.flow  {
+  margin-top: 1em;
+}
+
+/************************
+    * Navigation styles
+    ***********************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 2rem;
+}
+
+.logo {
+  width: 20rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: inherit;
+}
+
+nav a:hover,
+nav a:focus {
+  color: yellowgreen;
+}
+
+nav li {
+  margin-left: 1em;
+}

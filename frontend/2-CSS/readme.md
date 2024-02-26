@@ -456,13 +456,9 @@ You can use `max-width` or `min-width` interchangeably, but it's best to stick w
 ## Additional Resources
 
 - [CSS Cheatsheet](https://devhints.io/css)
-- [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
 - [CSS Normalize](https://necolas.github.io/normalize.css/)
 - [The New CSS Reset](https://github.com/elad2412/the-new-css-reset)
 - [Web Dev - Learn CSS Course](https://web.dev/learn/css/)
-- [CSS Diner Game](https://flukeout.github.io/)
-- [CSS Validator](https://jigsaw.w3.org/css-validator/)
-- [Free Scrimba HTML and CSS Course](https://scrimba.com/learn/htmlcss)
 - [Colte Steele - CSS Text Properties](https://www.youtube.com/watch?v=v9Hqy5Nxthc)
 - [Colte Steele - Box Model](https://www.youtube.com/watch?v=M1xEi_BBW1I)
 - [Colte Steele - CSS Selectors](https://www.youtube.com/watch?v=qj20o5UQ3qI)
@@ -482,5 +478,3 @@ You can use `max-width` or `min-width` interchangeably, but it's best to stick w
 - [CSS Grid vs Flexbox](https://www.youtube.com/watch?v=18VLSXfsj94&t=4s)
 - [Web Dev - Learn Response Web Design](https://web.dev/learn/design/)
 - [Conversation with Ethan Marcotte (creator of term RWD)](https://www.youtube.com/watch?v=iiLKVmxCxEU)
-- [RWD Podcast - Old episodes (but still useful)](https://responsivewebdesign.com/podcast/)
-- [Material Design - Google's Design System](https://material.io/develop/web)

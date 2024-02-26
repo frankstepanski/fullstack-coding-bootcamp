@@ -471,6 +471,3 @@ HTML elements are not given `display: inline-block` by default. Inline-block can
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 - [Data Attributes Guide - CSS-Tricks](https://css-tricks.com/a-complete-guide-to-data-attributes/)
 - [Data Attributes Reference](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
-- [HTML Crash Course - Mosh](https://www.youtube.com/watch?v=qz0aGYrrlhU)
-- [Styling Data Attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes#css_access)
-- [Using JavaScript with Data Attributes](https://www.thewebdeveloperguide.com/javascript-get-data-attribute/)

@@ -369,6 +369,9 @@ Nowadays, it is standard practice to ensure that websites are responsive. The re
 
 When building your application, there are three main devices to develop for: **Mobile**, **tablet**, and **desktop**.
 
+![responsive-design](images/responsive-design.jpg)
+
+
 ### Extraction
 
 The **extraction** design process of building an application is when developers start from desktop design, and then "extract" features until the design fits smaller devices.

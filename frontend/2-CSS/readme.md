@@ -281,13 +281,6 @@ Example CSS:
 }
 ```
 
-### Floats
-
-The `float` property places an element on the left or right side of it's container, and allows text and inline elements to wrap around it. The `clear` property can be used to prevent text or inline elements from wrapping around an element, and it can specify the left, right, or both sides.
-
-See the visual example of floats below:
-![float-example](images/float-example.png)
-
 ### Colors
 
 Appropriate use of colors on a webpage can help set a website apart, and make the site more engaging and appealing to users.

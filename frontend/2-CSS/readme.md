@@ -365,11 +365,7 @@ Mockups can be as simple as a sketch on paper or a "wireframe", or as complicate
 
 Responsive design is the process of building an application's user interface (UI) to dynamically adjust based on the size of the device being used to access it.
 
-Older websites were not designed with responsive design principles in mind, and this has lead to undesirable user experiences. Take a look at https://www.spacejam.com/archive/spacejam/movie/jam.htm for an example of an unresponsive website.
-
-Nowadays, it is standard practice to ensure that websites are responsive. Some examples of responsive designs can be found here: https://www.awwwards.com/50-examples-of-responsive-web-design.html.
-
-The reason responsive design is important is because increasing numbers of users are consuming the internet via mobile devices or tablets. In 2017, there were an estimated 3.5 billion web users world wide, and around 2 billion of them exclusively use the internet on mobile devices. Nowadays, it is a requirement in any front-end developer position to be capable of designing responsive websites.
+Nowadays, it is standard practice to ensure that websites are responsive. The reason responsive design is important is because increasing numbers of users are consuming the internet via mobile devices or tablets. As of 2022, there were an estimated <a href="https://www.statista.com/statistics/273018/number-of-internet-users-worldwide/">5.3 billion web users</a> world wide, and around 2 billion of them exclusively use the internet on mobile devices. Nowadays, it is a requirement in any front-end developer position to be capable of designing responsive websites.
 
 When building your application, there are three main devices to develop for: **Mobile**, **tablet**, and **desktop**.
 

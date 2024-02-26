@@ -365,12 +365,13 @@ Mockups can be as simple as a sketch on paper or a "wireframe", or as complicate
 
 Responsive design is the process of building an application's user interface (UI) to dynamically adjust based on the size of the device being used to access it.
 
-Nowadays, it is standard practice to ensure that websites are responsive. The reason responsive design is important is because increasing numbers of users are consuming the internet via mobile devices or tablets. As of 2022, there were an estimated <a href="https://www.statista.com/statistics/273018/number-of-internet-users-worldwide/">5.3 billion web users</a> world wide, and around 2 billion of them exclusively use the internet on mobile devices. Nowadays, it is a requirement in any front-end developer position to be capable of designing responsive websites.
+It is standard practice to ensure that websites are responsive. The reason responsive design is important is because increasing numbers of users are consuming the internet via mobile devices or tablets. As of 2022, there were an estimated <a href="https://www.statista.com/statistics/273018/number-of-internet-users-worldwide/">5.3 billion web users</a> world wide, and around 2 billion of them exclusively use the internet on mobile devices. 
+
+It is a requirement in any front-end developer position to be capable of designing responsive websites.
 
 When building your application, there are three main devices to develop for: **Mobile**, **tablet**, and **desktop**.
 
 ![responsive-design](images/responsive-design.jpg)
-
 
 ### Extraction
 
@@ -403,7 +404,7 @@ The syntax for writing a media query looks like the following:
 }
 ```
 
-Media queries are defined in CSS by using the `@media` statement. In the parentheses, we can specify the dimensions of the view port that our styles will apply to. The value passed into the parentheses can be referred to as a **break point**. Typically, break points are set with a `min-width` or `max-width` value. Inside the curly braces, we style normally.
+Media queries are defined in CSS by using the `@media` statement. In the parentheses, we can specify the dimensions of the view port that our styles will apply to. The value passed into the parentheses can be referred to as a <a href="https://blog.logrocket.com/css-breakpoints-responsive-design/">break point</a>. Typically, break points are set with a `min-width` or `max-width` value. Inside the curly braces, we style normally.
 
 #### Other Uses
 
@@ -469,4 +470,5 @@ You can use `max-width` or `min-width` interchangeably, but it's best to stick w
 - [CSS Grid Game](https://cssgridgarden.com/)
 - [CSS Grid vs Flexbox](https://www.youtube.com/watch?v=18VLSXfsj94&t=4s)
 - [Web Dev - Learn Response Web Design](https://web.dev/learn/design/)
+- [Three Components of Responsive Design](https://www.netsolutions.com/insights/responsive-web-design/)
 - [Conversation with Ethan Marcotte (creator of term RWD)](https://www.youtube.com/watch?v=iiLKVmxCxEU)

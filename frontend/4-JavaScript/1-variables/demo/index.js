@@ -6,7 +6,7 @@ console.log(message); // => undefined
 var name = ""; // empty string (length of 0)
 var age = 0; // 0
 var fName = "frank"; // 'f' 'r' 'a' 'n' 'k'
-fName = "frankie";
+fName = 'frankie';
 let age = 100;
 const loveJavaScript = true;
 let listOfComplaints = null;
@@ -99,7 +99,7 @@ console.log(4 == 3 && 4 == 3); // false && false => false
 
 console.log(4 == 4 || 5 == 5); // true || true => true
 console.log(4 == 4 || 4 == 3); // true || false => true
-console.log(4 == 3 || 4 == 4); // false || true => true
+console.log(4 == 3 || 4 == 4); // true || true => true
 console.log(4 == 3 || 4 == 3); // false || false => false
 
 console.log(!true); // => false (toggle the value of true)

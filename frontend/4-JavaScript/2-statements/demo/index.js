@@ -73,15 +73,14 @@ function blockScope() { // 1st block
         console.log("Made to the else statement - other conditions are false");
     }
 
-
 // for loops:
 
-    let total = 0;
+   let total = 0;
 
     for (let i = 0; i < 5; i++) {
-        
+       
         total += i;
-        console.log(i);
+        console.log(total);
     }
 
 // loop through a string:

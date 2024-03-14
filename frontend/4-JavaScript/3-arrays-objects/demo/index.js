@@ -28,12 +28,12 @@ console.log(arr.splice(2, 1)); // [1, 2, 4, 5] // removes elements from array an
 console.log(arr.reverse()); // [5, 4, 2, 1]
 console.log(arr.concat([6, 7, 8, 9, 10])); // [5, 4, 2, 1, 6, 7, 8, 9, 10]
 
-// Not mutator methods
+// Non mutator methods
 console.log(arr.includes(3)); // false
-console.log(arr.join(" ")); // "1 2 4 5"
+console.log(arr.join(",")); // "1,2,4,5"
 
 /* 
-   Iterator methods)
+   Iterator methods
    Each method loops through the array and performs the callback function on each element
    All iterator methods take a callback function as an argument
    The callback function takes in three arguments: element, index, array
@@ -57,7 +57,7 @@ arr4.forEach((element, index) => console.log(`Element ${index}: ${element}`));
 
 // map - returns a new array with same length as original array (never modifies original array)
 const arr5 = [1, 2, 3, 4, 5];
-const arr6 = arr5.map(element => element * 2);
+const arr6 = arr5.map(element => element * 2); // multiplies each element by 2
 console.log(arr6);
 
 // filter - returns a new array with elements that pass the test
@@ -67,7 +67,7 @@ console.log(arr7);
 
 // find - returns the first element that passes the test
 const arr9 = [1, 2, 3, 4, 5];
-const arr10 = arr9.find(element => element === 3);
+const arr10 = arr9.find(element => element === 3); // returns 3
 console.log(arr10);
 
 // findIndex - returns the index of the first element that passes the test
@@ -122,11 +122,11 @@ function findIndex(array, value) {
 
     for (let i = 0; i < array.length; i++) {
         if (array[i] === value) {
-            return i;
+            return i; // stops the function and returns the index
         }
     }
 
-    return -1;
+    return -1; // if the value is not found
 }
 
 console.log(findIndex([1, 2, 3, 4, 5], 8));
@@ -167,9 +167,9 @@ function callTwice(func) {
     func(); // run the rollDie function
 }
 
-// callback function:
+// callback function - is a function that is passed into another function as an argument
 function rollDie() {
-    const roll = Math.floor(Math.random() * 6) + 1;
+    const roll = Math.floor(Math.random() * 6) + 1; // random number between 1 and 6
     console.log(roll);
 }    
 

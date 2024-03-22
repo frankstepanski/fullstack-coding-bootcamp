@@ -1,9 +1,9 @@
 ### AWS Certified Developer Associate (DVA-C02) Study Guide
 
 These are the course materials we will use to prepare for the AWS Certified Developer Associate (DVA-C02) exam.<br/>
-We will be using the [Udemys course by Stepane Maarek](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
+We will be using the [Udemys course by Stepane Maarek](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/).
 
-Other resources:
+**Other resources:**
 
  - [Udemy course practice exams](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
  - [AWS Certified Developer Exame Guide](https://aws.amazon.com/certification/certified-developer-associate/)

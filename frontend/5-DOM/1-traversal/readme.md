@@ -56,7 +56,7 @@ Each node has a set of properties that we can interact with to perform certain a
 `innerText` - This will return all of the text content inside of an element and avoid returning any html elements.
 
 ```html
-<ul id="myList">
+<ul class="myList">
   <li>One</li>
   <li>Two</li>
   <li>Three</li>
@@ -64,7 +64,7 @@ Each node has a set of properties that we can interact with to perform certain a
 ```
 
 ```javascript
-const myList = document.getElementById('myList')
+const myList = document.querySelector('.myList')
 
 console.log(myList.innerText)
 ```
@@ -80,7 +80,7 @@ console.log(myList.innerText)
 ```
 
 ```javascript
-const myList = document.getElementById('myList')
+const myList = document.querySelector('.myList')
 
 console.log(myList.innerHTML)
 ```
@@ -92,7 +92,7 @@ console.log(myList.innerHTML)
 ```
 
 ```javascript
-const divOne = document.getElementById('divOne')
+const divOne = document.querySelector('.divOne')
 
 console.log(divOne.className)
 ```
@@ -100,7 +100,7 @@ console.log(divOne.className)
 `classList` - this is the object that we can use to remove or add classes to an element
 
 ```html
-<ul class="list" id="myList">
+<ul class="list">
   <li>One</li>
   <li>Two</li>
   <li>Three</li>
@@ -108,7 +108,7 @@ console.log(divOne.className)
 ```
 
 ```javascript
-const myList = document.getElementById('myList')
+const myList = document.querySelector('.list')
 
 // Add A Class
 myList.classList.add('show')

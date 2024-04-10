@@ -25,7 +25,7 @@ const spaceship = {
     }
 };
 
-console.log("pilot name", spaceship.pilot.name) // spaceship[variable_name][variable_name]] 
+console.log("pilot name", spaceship.pilot.favoriteFood[0]) // spaceship[variable_name][variable_name]] 
 
 // *** looping through objects ***
 // loop through object (for...in loop) - properties
@@ -87,7 +87,7 @@ console.log(product1);
 delete product1.available; // delete a property
 
 console.log(product1['name']); // bracket notation - used when the property name is dynamic
-console.log(product1.price); // dot notation
+console.log(product1.name); // dot notation
 
 // inheritance via a class
 // parent class (or base class)

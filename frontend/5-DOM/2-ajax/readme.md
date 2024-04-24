@@ -325,7 +325,7 @@ The disadvantages of using the ajax() or <a href="https://api.jquery.com/jquery.
 
 ### Using fetch
 
-The ```fetch()``` function is a new API for fetching resources. It's a global function, which means no creating new XHR objects or using outdated libraries like jQuery, and it vastly streamlines simple resource requests. 
+The ```fetch()``` function is the standard API for fetching resources. It's a global function, which means no creating new XHR objects or using outdated libraries like jQuery, and it vastly streamlines simple resource requests. 
 
 ```JS
 fetch('https://api.github.com/repos/jquery/jquery/commits')

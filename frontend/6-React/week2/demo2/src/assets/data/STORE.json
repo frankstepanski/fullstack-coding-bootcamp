@@ -1,0 +1,17 @@
+[
+    {
+      "title": "The Unbearable Weight of Massive Talent",
+      "image": "../images/poster1.jpg",
+      "alt": "The Unbearable Weight of Massive Talent"
+    },
+    {
+      "title": "The Northernman",
+      "image": "../images/poster2.jpg",
+      "alt": "The Northernman"
+    },
+    {
+      "title": "Dr Strange in the Multiverse of Madness",
+      "image": "../images/poster3.jpg",
+      "alt": "Dr Strange in the Multiverse of Madness"
+    }
+]

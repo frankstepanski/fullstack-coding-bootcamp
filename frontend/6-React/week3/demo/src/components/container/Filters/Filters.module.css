@@ -1,0 +1,14 @@
+.moviesFilter {
+    margin: auto;
+    width: 50%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .5rem 0 .5rem;
+    align-items: flex-end;
+}
+
+.moviesFilter input[type="checkbox"]  { 
+    cursor: pointer;
+    margin: 0 .2rem 0 0;
+}

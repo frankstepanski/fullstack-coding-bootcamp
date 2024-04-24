@@ -1,0 +1,12 @@
+.reviewList {
+    margin: 0 .5rem 1rem 0;
+    overflow-y: auto; /* shows vertical scroll if needed */
+}   
+
+.reviewList ul{
+    list-style-type: none;
+}
+
+.reviewList .star {
+    pointer-events: none;
+}

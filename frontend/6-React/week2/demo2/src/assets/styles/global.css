@@ -1,0 +1,152 @@
+/* 
+ *  Using one CSS file is only recommneded for small React apps.
+ *  For larger apps: Use multiple CSS files (CSS Modules) or CSS-in-JS (styled components)
+ *     for individual compoment styling.
+ *     https://css-tricks.com/css-modules-part-1-need/
+ *  
+ *  note: But you still can use one CSS file for reponsive styling or use a package*
+ *
+ *  sticky footer: https://css-tricks.com/a-clever-sticky-footer-technique/
+ *
+ */
+
+ @import url('http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500');
+
+ /* ==========================================================================
+   Base styles 
+   ========================================================================== */
+
+ html {
+    font-size: 16px; /* base font size : 1rem */
+ }
+
+ body{
+    font-family: 'Raleway', sans-serif;
+ }
+
+ a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+ }
+
+.container {
+   max-width: 1280px;
+   width: 90%;
+   margin: auto;
+   border:   1px solid #ccc;
+   min-height: 100vh;
+}
+
+/* ==========================================================================
+   Header 
+   ========================================================================== */
+
+header {
+    background-color:  #f8f9fa; 
+    height: 3em;
+    font-size: 2rem;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center; /* align vertically */
+    border-bottom: 1px solid #ccc;
+}   
+
+nav {
+    flex-basis: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header form {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+header input {
+    width: 10rem;
+    height: 2.5rem;
+    align-items: baseline;
+}
+
+header button {
+    width: 7rem;
+    height: 2.5rem;
+}
+
+/* ==========================================================================
+   Main 
+   ========================================================================== */
+
+main {
+    padding: 1%;  
+}
+
+main p {
+    font-size: 1.3em;
+ }
+
+/* ==========================================================================
+   Footer 
+   ========================================================================== */
+
+footer {
+    position: sticky;
+    top: 100vh;
+    text-align: center;
+    padding: 2%;
+    background-color:  #f8f9fa; 
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    font-size: .9em;
+}
+
+/* ==========================================================================
+   Home 
+   ========================================================================== */
+
+.jumbotron {
+    background-color: #f8f9fa;
+    width: 90%;
+    margin:  0 auto 2%;
+    padding: 3%;
+    border-radius: .5em;
+    border: 1px solid #ccc;
+}
+
+.jumbotron h1 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+.featured-movies-container {
+    width: 90%;
+    margin: auto;
+}
+
+.featured-movies {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem
+}
+
+.featured-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; /* keep all images same size */
+}
+
+.movie-info {
+    margin-top: 1rem;
+}

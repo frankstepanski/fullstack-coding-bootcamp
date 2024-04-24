@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script defer src="app.js"></script>
+    <link rel="shortcut icon" href="#" />
+</head>
+<body>
+
+<fieldset>
+<legend>Random Todo Data</legend>
+    <label for="quantity">Quantity (between 1 and 10):</label>
+    <input type="number" id="quantity" value="1" name="quantity" min="1" max="10">
+    <button id="todo-button">Click</button>  
+    <p class="todo-output"></p>
+</fieldset> 
+
+<fieldset>
+<legend>Random Image</legend>
+    <button id="image-button">Generate Image</button>  
+    <div id="image-wrapper"></div>
+</fieldset> 
+
+<fieldset>
+    <legend>List of Todos - JSONPlaceholder</legend>
+    <button id="todo-list-button">Get Todos</button>
+    <ul class = "todo-list"></ul>
+</fieldset> 
+
+<fieldset>
+    <legend>Post a Todos - JSONPlaceholder</legend>
+    <label for="title">Todo Title:</label>
+    <input type="text" id="todo-title" name="todo-title" />
+    <label for="body">Todo Body:</label>
+    <input type="text" id="todo-body" name="todo-body" />
+    <button id="post-todo-button">Post Todos</button>
+</fieldset> 
+
+<fieldset>
+    <legend>Delete a Todos - JSONPlaceholder</legend>
+    <label for="body">Todo ID:</label>
+    <input type="text" id="todo-id" name="todo-id" />
+    <button id="delete-todo-button">Delete Todo</button>
+</fieldset> 
+
+</body>   
+</html>

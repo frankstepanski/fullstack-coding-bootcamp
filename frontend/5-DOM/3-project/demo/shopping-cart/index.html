@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>Shopping</title>
+</head>
+
+<body>
+    <!-- wrap our entire section in a <div> element -->
+    <div id="wrapper">
+        <!-- define our header -->
+        <header>
+            <div id="page-top">
+                <h1 class="title">Shopaholic</h1>
+                <p>My shopping list</p>
+                <!-- add search & hide ability inside header  -->
+                <form id="search-item">
+                    <!-- search functionality -->
+                    <input type="text" placeholder="Search items..." />
+                </form>
+            </div>
+        </header>
+
+        <!-- adding an item to our main list using a <form> element -->
+        <form id="add-item">
+            <input type="text" placeholder="What do you want to buy?" />
+            <button>Add</button>
+        </form>
+        
+        <!-- define our grocery list section inside a <div> tag -->
+        <div id="grocery-list">
+            <h2 class="title">Items To Buy</h2>
+            <!-- insert each shopping item inside a table  -->
+            <ul>
+                <li>
+                    <span class="item">Milk</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="item">Sugar & Spice</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="item">Something to drink (e.g. coke)</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="item">Pizza (pref margarita)</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- add our JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -106,50 +106,6 @@ $('img').attr('alt');
 $('img').attr('alt', 'Wild kangaroo');
  ```
 
-#### Attribute Manipulation
-
-One part of elements able to be inspected and manipulated are attributes. A few options include the ability to add, remove, or change an attribute or its value. 
-
-In the examples below the .addClass() method is used to add a class to all even list items, the .removeClass() method is used to remove all classes from any paragraphs, and lastly the .attr() method is used to find the value of the title attribute of any abbr element and set it to Hello World.
-
-```
-$('li:even').addClass('even-item');
-$('p').removeClass();
-$('abbr').attr('title', 'Hello World');
-```
-
-Some of the attribute methods:
-
-- [.addClass()](https://api.jquery.com/addClass/#addClass-className)
-- [.attr()](https://api.jquery.com/attr/#attr-attributeName)
-- [.hasClass()](https://api.jquery.com/hasClass/#hasClass-className)
-- [.removeAttr()](https://api.jquery.com/removeAttr/#removeAttr-attributeName)
-- [.removeClass()](https://api.jquery.com/removeClass/#removeClass-className)
-- [.toggleClass()](https://api.jquery.com/toggleClass/#toggleClass-className)
-- [.val()](https://api.jquery.com/val/#val)
-
-#### Style Manipulation
-
-On top of manipulating attributes, the style of an element may also be manipulated using a variety of methods. When reading or setting the height, width, or position of an element there are a handful of special methods available, and for all other style manipulations the .css() method can handle any CSS alterations.
-
-The .css() method may be used to set one property, or many, and the syntax for each varies. To set one property, the property name and value should each be in quotations and comma separated. To set multiple properties, the properties should be nested inside of curly brackets with the property name in camel case, removing any hyphens where necessary, followed by a colon and then the quoted value. Each of the property and value pairs need to be comma separated.
-
-```
-$('h1 span').css('font-size', 'normal');
-$('div').css({
-  fontSize: '13px', 
-  background: '#f60'
-});
-$('header').height(200);
-```
-
-Some of the style methods:
-
-- [.css()](https://api.jquery.com/css/)
-- [.height()](https://api.jquery.com/height/#height)
-- [.position()](https://api.jquery.com/position/#position)
-- [.width()](https://api.jquery.com/width/#width)
-
 #### DOM Manipultion
 
 We can inspect and manipulate the DOM, changing the placement of elements, adding and removing elements, as well as flat out altering elements. The options here are deep and varied, allowing for any potential changes to be made inside the DOM.
@@ -195,10 +151,9 @@ $('li').on('click', function(event){
 ### Additional Resources
 
  - [W3Schools Tutorials](https://www.w3schools.com/jquery/default.asp)
- - [jQuery CheatSheet](https://htmlcheatsheet.com/jquery/)
  - [Traversy Media Playlist](https://www.youtube.com/playlist?list=PLillGF-RfqbYJVXBgZ_nA7FTAAEpp_IAc)
  - [Net Ninja Playlist](https://www.youtube.com/watch?v=jVe1GBCqFIE&list=PL4cUxeGkcC9hNUJ0j6ccnOAcJIPoTRpO4)
-  - [Freecodecamp's Beau Playlist](https://www.youtube.com/playlist?list=PLWKjhJtqVAbkyK9woUZUtunToLtNGoQHB)
+ - [Freecodecamp's Beau Playlist](https://www.youtube.com/playlist?list=PLWKjhJtqVAbkyK9woUZUtunToLtNGoQHB)
 
 
 ## Architecture of web apps: Clients and Servers

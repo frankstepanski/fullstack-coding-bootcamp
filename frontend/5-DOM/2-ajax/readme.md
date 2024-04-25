@@ -143,7 +143,7 @@ whenever the `readyState` attribute changes. The event handler requires a `callb
 
 This was the earliest code to perform AJAX requests. It was deprecated many, many years ago but the XMLHttpRequest API has been supported in the earliest of browsers and is still today.
 
-### Using fetch
+### Using the Fetch API
 
 The ```fetch()``` function is the standard API for fetching resources. It's a global function, which means no creating new XHR objects or using outdated libraries like jQuery, and it vastly streamlines simple resource requests. 
 

@@ -70,9 +70,7 @@ function getTodos() {
         todoList.appendChild(li);
       })
     })
-  .then(function(response) {
-    return response.json();
-  })
+  
 }
 
 function postTodo() {
@@ -87,7 +85,7 @@ function postTodo() {
     body: JSON.stringify({
       title: todoTitle,
       body: todoBody,
-      userId: randomUserId
+      userId: randomUserId // random user id (optional)
     }),
     headers: {
       "Content-type": "application/json; charset=UTF-8"

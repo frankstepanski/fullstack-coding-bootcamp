@@ -145,26 +145,6 @@ This was the earliest code to perform AJAX requests. It was deprecated many, man
 
 <strong>Note:</strong>:  <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">Synchronous XHR</a> is in deprecation state. The recommendation is that developers move away from the synchronous API and instead 
 
-### Using jQuery to make an AJAX Call
-
-The jQuery <a href="https://api.jquery.com/jquery.ajax/">ajax() method</a> provides core functionality of Ajax in jQuery. It sends asynchronous HTTP requests to the server. The jQuery method abstracts over ``` XMLHttpRequest``` making it easier to use.
-
-```JS
-$.ajax({
-  url: "https://fiddle.jshell.net/favicon.png",
-  beforeSend: function( xhr ) {
-    xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
-  }
-})
-  .done(function( data ) {
-    if ( console && console.log ) {
-      console.log( "Sample of data:", data.slice( 0, 100 ) );
-    }
-  });
-```
-
-The disadvantages of using the ajax() or <a href="https://api.jquery.com/jquery.getjson/">getJson()</a> for GET requests is that it is tightly coupled to jQuery and is not a native library.
-
 ### Using fetch
 
 The ```fetch()``` function is the standard API for fetching resources. It's a global function, which means no creating new XHR objects or using outdated libraries like jQuery, and it vastly streamlines simple resource requests. 

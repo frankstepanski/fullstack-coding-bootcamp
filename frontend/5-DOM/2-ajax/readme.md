@@ -179,7 +179,6 @@ Calling ```res.json()``` in our fetch is just a nice shorthand for saying "give 
 
 ## Additional Resources
 
-  - [jQuery Overview](https://www.youtube.com/watch?v=aN8V-Ah2y4Q&t=345s)
   - [AJAX Overview - MDN (ignore implementation details)](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
   - [JS  event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
   - [Another JS event loop resource](https://www.youtube.com/watch?v=WvTMIKHvPxU)
@@ -189,4 +188,3 @@ Calling ```res.json()``` in our fetch is just a nice shorthand for saying "give 
   - [Promise object - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
   - [Async Crash Course - Traversy Media](https://www.youtube.com/watch?v=PoRJizFvM7s)
   - [Asynchronous Playlist - Net Ninja](https://www.youtube.com/watch?v=ZcQyJ-gxke0&list=PL4cUxeGkcC9jx2TTZk3IGWKSbtugYdrlu)
-

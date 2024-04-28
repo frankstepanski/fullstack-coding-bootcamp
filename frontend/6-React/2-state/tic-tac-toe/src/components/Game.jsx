@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { calculateWinner } from '../utils/helpers'
+import { calculateWinner } from '../utils/helpers.js'
 import Board from './board.jsx'
 
 /*

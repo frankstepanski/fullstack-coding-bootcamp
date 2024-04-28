@@ -38,34 +38,6 @@ The `Virtual DOM` is a light-weight copy of the actual DOM. The Virtual DOM is t
 
 ![Virtual DOM](images/dom.png)
 
-## Get Started
-
-We will get started by using the command line application `create-react-app` to quickly make a React application. Create react app is a bootstrapping tool that helps developers easily get off the ground and started with a React project.
-
-We first need to globally install `create-react-app` onto our machines.
-
-In the terminal run:
-
-```bash
-$ npm install -g create-react-app
-```
-
-The `-g` is what is known as a flag, it pretty much just says to install this globally to our machine so we can use it anywhere.
-
-After installing create react app, go ahead and create a new react project by running:
-
-```bash
-$ create-react-app name-of-app
-```
-
-Once your react app has been made, `cd` into it and run:
-
-```bash
-$ npm start
-```
-
-This command will start our react server and will be available to us on `http://localhost:3000`
-
 ## Components
 
 Components are the building blocks of a React application.

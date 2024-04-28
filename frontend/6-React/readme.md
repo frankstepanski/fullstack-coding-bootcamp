@@ -1,27 +1,3 @@
-# React One: Introduction to React
-
-This is the lecture repo used for React One. In this we will go over what React is, what it is used for, and how to get started.
-
-Lecture Slides: https://slides.com/dmweb/react-1
-
-Code Along: https://github.com/DevMountain/friends-list
-
-Lab Exercise: https://github.com/DevMountain/toy-problem-showcase
-
-# Student Learning Objectives
-
-<details>
-  <summary>React</summary>
-  <ul>
-    <li>Student can create an app with create react app</li>
-    <li>Student can render JSX on the screen</li>
-    <li>Student understands JSX (escaping JSX, className vs class)</li>
-    <li>Student can initialize state in a constructor function</li>
-    <li>Student can render state on the screen</li>
-    <li>Student can use event handlers and e.target.value</li>
-  </ul>
-</details>
-
 ## What Is React?
 
 React is a Javascript library that was created and is maintained by Facebook. React is used to manage the DOM and create highly performant user interfaces and front end applications.

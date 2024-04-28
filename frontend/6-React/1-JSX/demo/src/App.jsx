@@ -1,43 +1,82 @@
-import Game from './components/game.jsx' 
-import './App.css' /* imports CSS from App.css */
+import React from 'react'
+import Greeting from './components/Greeting'
+import FormalGreeting from './components/FormalGreeting'
+import './App.css'
 
 /*
- React:
+    Rules of JSX
+    
+    1- JSX is an syntax extension for JavaScript to write HTML-like code in JS
+    2- Is transformed into regular JS before execute in the browser
+    3- Behind the scenes it is transformed to a bunch of React.createElement()
+    4- JavaScript expressions are embedded within {}
+    5- CSS properties are camelCased, not using "-" dashes
+    6- The "class" attribute is now "className" in React
+    7- All tags must be self-closing
 
-   A JavaScript library for building User Interfaces (UIs)
+    Rules of Props
+    
+    1- Anytime you are passing props that are not a string, you must wrap in {} 
+    2- You can pass any type of data as a prop (arrays, objects, functions).
+    3- If you pass a prop without a value, that value will be set as true. 
+    4- React puts all props on an object and passes that object to the compoment.
+    5- That object is called props.
 
-    - Makes developing large scale applications easier
-    - Provides conventions for dealing with rendering and state
-    - Need a tool to scaffold your app
-       - package.json => tracks dependencies
-    - Based on components - splitting UI into smaller parts
-      - SRA - Single Responsiblity Prinicple: should do only thing
-    - JSX:
-       - Syntactic Sugar for writing JavaScript in HTML  
-       - Gets compiled to JS before rendering
-       - Every components returns JSX
-       - All tags must have closing tag
-       - Required one "parent" tag (e.g. <>, <div>, etc)
-    - Components:
-       - Just a function that returns JSX
-       - Always exported to be used in another component
-       - Usually in one file (.js, .jsx)
-       - Parent => Child
-       - Component tree starts with App component
-       - To execute a component is: <Component />
+    Props object
 
-Vite:
-    - Tool for scaffolding React apps; similar to create-react-app
-    - create-react-app: No longer supprted by Facebook
-    - Faster than create-react-app because it uses ES modules (instead of Webpack)
+    1- Built-in to every component you create
+    2- Passing props automatically attached it to the Props object
+    3- It becomes a property on the Props object
+    4- You destruct the props object to access the prop value by {propname, propname2, etc}
 
 */
 
 function App() {
+  
+  const name = "frank";
+
+  const title = "Welcome to the new blog";
+  const likes = 50;
+  const person = { name: 'yoshi', age: 30 };
+  const link = "http://www.google.com"
+
+  const message = "this is a greeting";
+  const anotherMessage = "this is another greeting";
 
   return (
     <>
-      <Game />
+      <h1>Hello {name}</h1>
+      <p>Start editing to see some magic happen :)</p>
+      <Greeting />
+      <Greeting />
+      <Greeting />
+
+      <h1>{title}</h1>
+      <p>Liked {likes} times</p>
+ 
+      <p>{person.name }</p>
+      <p>{[1,2,3,4,5]}</p>
+      <p className="green">{(Math.random() * 10).toFixed(2)}</p>
+      <a href={link}>Google Site</a>
+
+      <ul>
+      {
+          ["eat", "sleep", "work"].map((todo,index) => {     
+              return (
+                <li key={index}>{todo}</li>
+              )
+          })
+      }
+      </ul>
+
+      {/* Passing props to a component */}
+      <FormalGreeting 
+         message = {message}
+         anotherMessage = {anotherMessage} 
+         thirdMessage = "Hi" /* passing a string */
+         temperature = {88} /* passing a number */
+      />
+
     </>
   )
 }

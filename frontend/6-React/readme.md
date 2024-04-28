@@ -82,7 +82,7 @@ We can use events to send data back up the `component tree`.
 Data can be passed as `props` from a parent component to a child component
 
 
-Here are some resources on getting started with React:
+### Resources
 
 - [React Roadmap](https://roadmap.sh/react)
 - [High Level Overview of React](https://www.youtube.com/watch?v=FRjlF74_EZk&t=40s)
@@ -94,7 +94,7 @@ Here are some resources on getting started with React:
 - [Free Mini React Course](https://fullstackopen.com/en/part1)
 - [Watch some crazy dudes code for 20 hours](https://www.youtube.com/watch?v=0mVbNp1ol_w&t=18382s)
 
-### React Under-the-Hood
+#### React Under-the-Hood
 
 A lot happens to make React work. If you are curious, here are some technical resources:
 

@@ -57,26 +57,6 @@ const DumbComponent = () => <h1>Hello, I'm a functional component</h1>
 
 export default DumbComponent
 ```
-
-### Class Component
-
-A class component is a complex component or sometimes referred to as a `smart component`. That is because a class component can hold local state values and we can also write logic to manipulate those state values. A class component will still return a React element.
-
-```javascript
-import React from 'react'
-
-class SmartComponent extends React.Component {
-  // render method
-  render() {
-    return <h1>Hello, I'm a class component</h1>
-  }
-}
-
-export default SmartComponent
-```
-
-Above, notice that we have a method called `render`. This method is where we will choose what elements to return to make up the React element. This is the part of the component that is known as `JSX`.
-
 ### JSX
 
 The tag syntax inside of a component is not a string or HTML. It's called `JSX`, which is a syntax extension to Javascript. JSX produces React "elements" that describe how the user interface should appear for that React element. This looks very familiar to HTML, so if you are comfortable with that, then it should be easy to get the hang of.

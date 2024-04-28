@@ -1,4 +1,6 @@
 import React from 'react'
+import PublicLayout from './components/layouts/PublicLayout'
+import Home from './components/pages/Home'
 
 import './App.css'
 

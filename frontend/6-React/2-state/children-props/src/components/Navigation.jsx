@@ -9,9 +9,9 @@ const Navigation = () => {
         <nav>
           <ul>
             {
-              navLinks.map((link) => {
+              navLinks.map((link, index) => {
                 return (
-                        <li>
+                        <li key={index}>
                           <a href="#">{link}</a>
                         </li>
                 );

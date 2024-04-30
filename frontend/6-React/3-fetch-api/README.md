@@ -229,7 +229,6 @@ import style from './Movies.module.css';
 
 Reference: <a href="https://github.com/css-modules/css-modules#naming">https://github.com/css-modules/css-modules#naming</a>
 
-![CSS Modules](images/css-modules.png)
 
 ```CSS
 /* Button.module.css  */

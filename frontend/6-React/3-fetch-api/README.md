@@ -8,7 +8,7 @@ Class components gave React developers access to the most common lifecycle metho
 These 'lifecycle' methods were only available in `class components`.
 
 Starting with <strong>React version 16.8</strong> hooks were added</a>. 
-Those lifecycle methods that were used within class components were replaced with a few hooks. 🤓
+The lifecycle methods that were used within class components were replaced by certain hooks. 🤓
 
 ## React Lifecycle using Hooks
 

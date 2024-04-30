@@ -1,30 +1,14 @@
-## Movie Reviewer Database App - Part 3
-
-![Modal](images/modal.png)
-![Filtering](images/filtering.png)
-
 ## Component Life Cycle Methods
 
-When writing React components, we sometimes need access to lifecycle events to handle a variety of side effects: fetching data on mount, sanitizing props when the component updates, cleaning up before the component unmounts, etc.
+When writing React components, we need access to lifecycle events to handle a variety of side effects: 
+fetching data on mount, sanitizing props when the component updates, cleaning up before the component unmounts, etc.
 
-Until React 16.8, the most common solution for handling lifecycle events required `ES6 class-based components`. Class components gave React developers access to the most common lifecycle methods: componentDidMount, componentDidUpdate, and componentWillUnmount.
+Before in the integration of hooks, handling lifecycle events required `ES6 class-based components`. 
+Class components gave React developers access to the most common lifecycle methods: componentDidMount, componentDidUpdate, and componentWillUnmount.
+These 'lifecycle' methods were only available in `class components`.
 
-![Class Component Lifecycle Methods](images/life-cycle-methods-classes.png)
-
-- Mounting — The component is created and then inserted into the DOM
-- Updating — A React component is updated via changes in props or state.
-- Unmounting — The component is removed from the DOM.
-- Error Handling — When there's a bug, the component is in the error
-
-These 'lifecycle' methods available only in `class components`, were used to to inject code during the `component lifecycle`.
-
-- ```componentDidMount()``` runs after the component is mounted and rendered to the DOM
-- ```componentDidUpdate()``` runs after the updating happens. This one is called always except for the initial render. 
-- ```componentWillUnmount()``` run just before the component is removed from the DOM. 
-
-The issue with these class-based component lifecycle methods were re-usability (e.g. must be a member to the class itself) which cause additional complexity on building React applications to scale for maintainabity and re-use.
-
-But starting with React version 18, <a href="https://reactjs.org/blog/2019/02/06/react-v16.8.0.html">hooks were added</a>. Those lifecycle methods that were used within class components were replaced with various React hooks. 🤓
+Starting with React version 18, <a href="https://reactjs.org/blog/2019/02/06/react-v16.8.0.html">hooks were added</a>. 
+Those lifecycle methods that were used within class components were replaced with the useEffect hook mostly. 🤓
 
 ## React Lifecycle using Hooks
 

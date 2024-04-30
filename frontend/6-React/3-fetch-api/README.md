@@ -7,7 +7,7 @@ Before in the integration of hooks, handling lifecycle events required `ES6 clas
 Class components gave React developers access to the most common lifecycle methods: componentDidMount, componentDidUpdate, and componentWillUnmount.
 These 'lifecycle' methods were only available in `class components`.
 
-Starting with React version 18, <a href="https://reactjs.org/blog/2019/02/06/react-v16.8.0.html">hooks were added</a>. 
+Starting with <strong>React version 16.8</strong> hooks were added</a>. 
 Those lifecycle methods that were used within class components were replaced with a few hooks. 🤓
 
 ## React Lifecycle using Hooks

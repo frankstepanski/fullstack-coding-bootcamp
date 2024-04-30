@@ -7,15 +7,22 @@ function UseEffectBasic() {
 
 
   /*
-      useEffect is a hook in React that allows you to perform side effects in functional components. Side effects can include things like fetching data from an API, subscribing to events, or updating the document title.
+      useEffect is a hook in React that allows you to perform side effects in functional components. 
+      Side effects can include things like fetching data from an API, subscribing to events, 
+      or updating the document title.
 
-      You use useEffect inside a functional component to perform actions that need to happen after the component has rendered or when certain dependencies have changed.
+      You use useEffect inside a functional component to perform actions that need to happen after 
+      the component has rendered or when certain dependencies have changed.
 
-      useEffect takes two arguments: a callback function and an optional array of dependencies. The callback function represents the side effect you want to perform, and the dependencies determine when the effect should be triggered.
+      useEffect takes two arguments: a callback function and an optional array of dependencies. 
+      The callback function represents the side effect you want to perform, and the dependencies 
+      determine when the effect should be triggered.
 
-      The callback function inside useEffect will run after the component has rendered for the first time and after every subsequent re-render, unless you specify otherwise by using dependencies.
+      The callback function inside useEffect will run after the component has rendered for the 
+      first time and after every subsequent re-render, unless you specify otherwise by using dependencies.
 
-      If you don't provide a dependency array, the effect will run after every render. If you provide an empty dependency array ([]), the effect will run only once after the initial render.
+      If you don't provide a dependency array, the effect will run after every render. 
+      If you provide an empty dependency array ([]), the effect will run only once after the initial render.
 
        Flow:
 

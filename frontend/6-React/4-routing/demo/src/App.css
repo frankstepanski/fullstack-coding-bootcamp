@@ -1,0 +1,123 @@
+/*********** Header */
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*********** Navigation */
+
+nav {
+  display: flex;
+
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none; 
+}
+
+nav ul li {
+  margin-right: 5px;
+}
+
+/*********** Login */
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.login label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.login .form-group {
+  display: flex;
+  flex-direction: row; 
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.login utton:hover {
+  background-color: #0056b3;
+}
+
+/*********** Footer */
+
+footer {
+  font-size: 12px;
+  text-align: center;
+}
+
+/*********** Public Layout */
+
+main {
+  padding: 50px 40px 50px 40px;
+}
+
+main h1 {
+  text-align: center;
+}
+
+/*********** Product Page */
+
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.product h2 {
+  margin: 0;
+}
+
+.product p {
+  margin: 5px 0;
+}
+
+.product .price {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.product .location {
+  color: #555;
+}
+
+/*********** Contact Page */
+
+.contact label {
+  display: block; 
+  margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  display: block; 
+}
+
+.contact button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

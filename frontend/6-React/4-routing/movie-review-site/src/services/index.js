@@ -14,12 +14,15 @@
    being public in production. Environment variables are embedded into the build, 
    meaning anyone can view them by inspecting your app's files. 
    
-   Also, make sure you add your key to the .gitignore file.
-   To be secure, should be server-side but for this project, it's fine.
+   To use the TMDB API, you need to sign up for an account and get an API key.
+   https://developer.themoviedb.org/docs/getting-started
+
+   Store the API key in a .env.local file in the root of your project.
+   VITE_API_KEY=your_api_key
 
 */
 
-const API_KEY = import.meta.env.VITE_API_KEY; // from .env.local file
+const API_KEY = import.meta.env.VITE_API_KEY; 
 
 async function getAllMovies (URL) {
 

@@ -16,10 +16,10 @@ import React from 'react';
 
 function FormalGreeting(
     { 
-        message, 
-        anotherMessage, 
-        thirdMessage,
-        temperature
+        message, // destructuring the props object of props.message
+        anotherMessage, // destructuring the props object of props.anotherMessage
+        thirdMessage, // destructuring the props object of props.thirdMessage
+        temperature // destructuring the props object of props.temperature
    })
    {
  

@@ -1,0 +1,305 @@
+/* 
+ *  Using one CSS file is only recommneded for small React apps.
+ *  For larger apps: Use multiple CSS files (CSS Modules) or CSS-in-JS (styled components)
+ *     for individual compoment styling.
+ *     https://css-tricks.com/css-modules-part-1-need/
+ *  
+ *  note: But you still can use one CSS file for reponsive styling or use a package*
+ *
+ *  sticky footer: https://css-tricks.com/a-clever-sticky-footer-technique/
+ *
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+ /* ==========================================================================
+   Base styles 
+   ========================================================================== */
+
+ html {
+    font-size: 16px; /* base font size : 1rem */
+ }
+
+ body{
+    font-family: 'Lato', sans-serif;
+ }
+
+ a {
+    text-decoration: none;
+    color: #000;
+ }
+
+ /*
+    Do not want images to resize when resizing the browser window
+    Media queries will handle this
+    
+ img {
+    max-width: 100%;
+    height: auto;
+ }
+ */
+
+.container {
+   max-width: 1440px;
+   width: 90%;
+   margin: auto;
+   border:   1px solid #ccc;
+   min-height: 100vh;
+}
+
+/* ==========================================================================
+   Header 
+   ========================================================================== */
+
+header {
+    background-color:  #f8f9fa; 
+    height: 3em;
+    font-size: 2rem;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center; /* align vertically */
+    border-bottom: 1px solid #ccc;
+}   
+
+nav {
+    flex-basis: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header form {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+header input {
+    width: 10rem;
+    height: 2.5rem;
+    align-items: baseline;
+}
+
+header button {
+    width: 7rem;
+    height: 2.5rem;
+}
+
+/* ==========================================================================
+   Main 
+   ========================================================================== */
+
+main {
+    padding: 2%;  
+}
+
+main p {
+    font-size: 1.3em;
+ }
+
+/* ==========================================================================
+   Footer 
+   ========================================================================== */
+
+footer {
+    position: sticky;
+    top: 100vh;
+    text-align: center;
+    padding: 2%;
+    background-color:  #f8f9fa; 
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    font-size: .9em;
+}
+
+/* ==========================================================================
+   Home View
+   ========================================================================== */
+
+.jumbotron {
+    background-color: #f8f9fa;
+    width: 90%;
+    margin:  0 auto 2%;
+    padding: 3%;
+    border-radius: .5em;
+    border: 1px solid #ccc;
+}
+
+.jumbotron h1 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+.featured-movies-container {
+    width: 90%;
+    margin: auto;
+}
+
+.featured-movies-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem
+}
+
+.featured-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; /* keep all images same size */
+}
+
+.featured-movie-info {
+    margin-top: 1rem;
+}
+
+/* ==========================================================================
+   Movies View
+   ========================================================================== */
+
+.movies-filter {
+    margin: auto;
+    width: 60%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .5rem 0 .5rem;
+    align-items: flex-end;
+}
+
+.movies-list-container {
+    width: 95%;
+    margin: 2.75rem auto 0;
+}
+
+.movie-details {
+    width: 15%;
+}
+
+.movie-details li {
+    display:inline-block;
+}
+
+.movie-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-header ul {
+    display: flex;
+    list-style: none;
+}
+
+.movie-header ul li {
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    font-weight: 400;
+    box-shadow: .1rem .1rem #ccc;
+    padding: .2rem .7rem .2rem .7rem;
+    margin: .5rem;
+    border-radius: 1rem;
+}
+
+/* 
+  https://www.kevinleary.net/horizontal-bulleted-lists-css/
+*/
+.movie-details li::before {
+    content: '\00a0\2022\00a0\00a0';
+    color:#999;
+    font-size:16px;
+}
+
+.movie-details li:first-child:before {
+    content: '';
+}
+
+.movie-info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 371px; /* keep height even with image posters */
+    margin: .5rem 0 .5rem 0;
+}
+
+.movie-list {
+    padding: 1%;
+}
+
+.movie-container {
+   margin-bottom: 1rem;
+   padding: 1%;
+}
+
+.movie-container:nth-child(odd) {
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+}
+
+/* ==========================================================================
+   Reviews 
+   ========================================================================== */
+   
+.review-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 0;
+}
+
+.review-list {
+    margin: 0 .5rem 1rem 0;
+    overflow-y: auto; /* shows vertical scroll if needed */
+}   
+
+.review-list ul{
+    list-style-type: none;
+}
+
+.review-form {
+    background-color: #89c7cf;
+    padding: 2%;
+    width: 98%;
+}
+
+.review-form form {
+   display: flex;
+   flex-direction: column;
+}
+
+.review-form label {
+    font-weight: bold;
+}
+
+.review {
+    padding: 0 0 .5rem 0;
+}
+/*  
+ *  Disable click and hover events for other users ratings 
+ *  note: In production-grade code, you would need a prop(s) to properly disable
+*/
+.review-list .star {
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   Star Component 
+   ========================================================================== */
+
+.star {
+    display: flex;
+}
+
+.star input[type="radio"] {
+    display: none;
+}
+
+.star-icon {
+    cursor: pointer;
+    transition: color 500ms;
+}

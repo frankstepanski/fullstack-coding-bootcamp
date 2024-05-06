@@ -13,6 +13,7 @@ import './App.css'
     5- CSS properties are camelCased, not using "-" dashes
     6- The "class" attribute is now "className" in React
     7- All tags must be self-closing
+    8- JSX must have one root element
 
     Rules of Props
     
@@ -33,7 +34,7 @@ import './App.css'
 
 function App() {
   
-  const name = "frank";
+  const name = "tom";
 
   const title = "Welcome to the new blog";
   const likes = 50;
@@ -43,11 +44,11 @@ function App() {
   const message = "this is a greeting";
   const anotherMessage = "this is another greeting";
 
+  // This is where your JSX starts in any component
   return (
     <>
       <h1>Hello {name}</h1>
       <p>Start editing to see some magic happen :)</p>
-      <Greeting />
       <Greeting />
       <Greeting />
 

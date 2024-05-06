@@ -1,0 +1,142 @@
+/* Global Style Sheet */
+
+/* ==================================================
+   Container styles 
+   ================================================== */
+
+   .container {
+    width: 800px;
+    margin: auto;
+  }
+
+/* ==================================================
+  Header styles 
+================================================== */
+
+ header {
+   display: flex;
+   justify-content: center;
+ }
+
+/* ==================================================
+  MovieList styles 
+================================================== */
+
+section {
+ width: 800px;
+}
+
+/* ==================================================
+  Movie styles 
+================================================== */
+
+article {
+ background-color: darkgrey;
+ padding: 15px;
+ margin-bottom: 15px;
+ border-radius: 5px;
+}
+
+img.thumbnail { 
+   width: 100px;
+   height: 140px;
+}
+
+article > header {
+   display: flex;
+   gap: 0px 10px;
+}
+
+p { 
+   margin: 0px;
+}
+
+.categories {
+   display: flex;
+}
+
+.categories h4 {
+ margin: 0;
+}
+
+.categories ul {
+   display: flex;
+   list-style-type: none; 
+   margin: 0px;
+   padding: 0 5px 0 5px;
+   gap: 5px;
+}
+
+aside {
+ display: flex;
+ justify-content: space-between;
+}
+
+/* ================================================
+  StarRating styles 
+================================================== */
+
+.starRating {
+ margin: 3px 0 3px 0;
+}
+
+/* ================================================
+  Star Component 
+================================================== */
+
+  .starRating {
+     display: flex;
+  }
+
+ .starRating input[type="radio"] {
+    display: none;
+ }
+
+ .star-icon {
+   cursor: pointer;
+   transition: color 500ms; 
+ }
+/* =================================================
+  ReviewForm styles 
+ ================================================== */
+
+  .reviewFormContainer {
+     width: 350px;
+     margin: 20px 0 0 0;
+  }
+
+  legend {
+    font-weight: bold;
+  }
+
+  fieldset label {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* ==================================================
+  Review styles 
+  ================================================== */
+
+  .reviewUser {
+    font-weight: bold;
+  }
+
+  .review {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+/* ================================================
+  ReviewList styles 
+================================================== */
+  .reviewsContainer {
+    width: 350px;
+    margin: 20px 0 0 0;
+    height: 215px;
+    overflow: auto;
+  }
+

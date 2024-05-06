@@ -13,18 +13,18 @@ function App() {
   const [movies, setMovies] = useState(STORE);
   
   const featuredMovies = movies.filter(movie => movie.featured === true);
- 
-  const addReview = (id, rating, comment) => {
 
+  const addReview = (id, rating, comment) => {
+   
     const _movies = [...movies];
     const index = _movies.findIndex(movie => movie.id === id);  
-    
-    _movies[index].reviews.push({
-       user: `user${Math.floor(Math.random() * 99) + 1}`,
-       stars: parseInt(rating),
-       comment: comment,
-    });
 
+    _movies[index].reviews.push({
+        user: `user${Math.floor(Math.random() * 99) + 1}`,
+        stars: parseInt(rating),
+        comment: comment,
+        date: new Date().toISOString(),
+    });
     setMovies(_movies);
   }
 

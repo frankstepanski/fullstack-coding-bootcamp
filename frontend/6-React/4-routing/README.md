@@ -167,12 +167,3 @@ const Button = () => {
 Here, ```StyledButton``` is the styled component, and it will be rendered as an HTML button with the contained styles. ```styled``` is an <a href="https://styled-components.com/docs/api#styled">internal utility method</a> that transforms the styling from JavaScript into actual CSS.
 
 > The only issue against CSS-in-JS libraries involves performance. These libraries do some relatively heavy lifting under the hood: compiling and interpolating props for styling directives in tagged template literals, building a graph of managed elements, preprocessing CSS, and injecting the CSS into the page. So for large-scale React applications, it could be an issue, but generally the performance hit should be minimal.
-
-## React Component Folder Structure
-
-React projects tend to get larger and more complex over time. The more files you have in the project, the more important it becomes to organize those files in a way that makes it easy to do the following:
-
- - Find and modify existing code
- - Add new code in a location consistent with the existing code
-
-Bear in mind that keeping all of your components in the src folder will get overwhelming, even for small applications. There are no rules about how to organize your code. Simply do what makes sense for you. Though there are some <a href="https://reactjs.org/docs/faq-structure.html">common patterns</a> that are very popular in the React ecosystem you may want to consider.

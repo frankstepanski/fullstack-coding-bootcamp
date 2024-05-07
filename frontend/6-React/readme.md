@@ -99,7 +99,6 @@ Data can be passed as `props` from a parent component to a child component
 - [useEffect Explained](https://dmitripavlutin.com/react-useeffect-explanation/)
 - [useEffect - Sony Sangha Youtube](https://www.youtube.com/watch?v=UVhIMwHDS7k)
 
-
 #### React Under-the-Hood
 
 A lot happens to make React work. If you are curious, here are some technical resources:

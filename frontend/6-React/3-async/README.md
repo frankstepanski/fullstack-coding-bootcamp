@@ -311,23 +311,3 @@ React projects tend to get larger and more complex over time. The more files you
  - Add new code in a location consistent with the existing code
 
 Bear in mind that keeping all of your components in the src folder will get overwhelming, even for small applications. There are no rules about how to organize your code. Simply do what makes sense for you. Though there are some <a href="https://reactjs.org/docs/faq-structure.html">common patterns</a> that are very popular in the React ecosystem you may want to consider.
-
-## References
- - CSS Element Generators:
-   - [Button Generator](https://www.bestcssbuttongenerator.com/)
-   - [Another Button Generator](https://cssbuttoncreator.com/)
-   - [Box-Shadow Generator](https://html-css-js.com/css/generator/box-shadow/)
-   - [Another Box-Shadow Generator](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator)
- - [CSS Modules Documentation](https://github.com/css-modules/css-modules) 
- - [CSS Modules - Create React App](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/)
- - [Styled Components Documentation](https://styled-components.com/docs)
- - [Emotion Documentation](https://emotion.sh/docs/introduction)
- - [CSS-in-JS Explained](https://www.youtube.com/watch?v=ull9iCMTGDE)
- - [Using Styled Components](https://www.youtube.com/watch?v=pWps7PkrQaQ)
- - [useEffect Explained](https://dmitripavlutin.com/react-useeffect-explanation/)
- - [useEffect - W3Schools](https://www.w3schools.com/react/react_useeffect.asp)
- - [useEffect - Sony Sangha Youtube](https://www.youtube.com/watch?v=UVhIMwHDS7k)
- - [Conditional Rendering Explained](https://www.youtube.com/watch?v=BMq69JNUZ_U)
- - [Conditional Rendering Reference - W3Schools](https://www.w3schools.com/react/react_conditional_rendering.asp)
- - [React Component Folder Structure](https://www.taniarascia.com/react-architecture-directory-structure/)
- - [React Hooks Lifecycle Diagram](https://github.com/Wavez/react-hooks-lifecycle)

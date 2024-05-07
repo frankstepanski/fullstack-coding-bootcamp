@@ -89,7 +89,16 @@ Data can be passed as `props` from a parent component to a child component
 - [Official Documentation](https://react.dev/)
 - [Steve Griffith Playlist](https://www.youtube.com/playlist?list=PLyuRouwmQCjmMfs-HOsDGoaN6JiYrC6Ms) 
 - [Free Scrimba React Course](https://scrimba.com/learn/learnreact)
+- [React Component Folder Structure](https://www.taniarascia.com/react-architecture-directory-structure/)
+- [Conditional Rendering Explained](https://www.youtube.com/watch?v=BMq69JNUZ_U)
 - [React Router](https://reactrouter.com/en/main/start/overview)
+- [CSS Modules Documentation](https://github.com/css-modules/css-modules) 
+- [Styled Components Documentation](https://styled-components.com/docs)
+- [Emotion Documentation](https://emotion.sh/docs/introduction)
+- [CSS-in-JS Explained](https://www.youtube.com/watch?v=ull9iCMTGDE)
+- [useEffect Explained](https://dmitripavlutin.com/react-useeffect-explanation/)
+- [useEffect - Sony Sangha Youtube](https://www.youtube.com/watch?v=UVhIMwHDS7k)
+
 
 #### React Under-the-Hood
 

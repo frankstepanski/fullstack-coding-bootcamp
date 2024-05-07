@@ -86,13 +86,9 @@ Data can be passed as `props` from a parent component to a child component
 
 - [React Roadmap](https://roadmap.sh/react)
 - [High Level Overview of React](https://www.youtube.com/watch?v=FRjlF74_EZk&t=40s)
-- [What Create React App Really Does](https://www.freecodecamp.org/news/create-react-app-npm-scripts-explained/)
-- [Component Composition](https://www.youtube.com/watch?v=IDDIvXqMiD4&t=69s)
+- [Official Documentation](https://react.dev/)
 - [Steve Griffith Playlist](https://www.youtube.com/playlist?list=PLyuRouwmQCjmMfs-HOsDGoaN6JiYrC6Ms) 
 - [Free Scrimba React Course](https://scrimba.com/learn/learnreact)
-- [Let's Learn React - Learn with Jason Video Podcast](https://www.learnwithjason.dev/let-s-learn-react)
-- [Free Mini React Course](https://fullstackopen.com/en/part1)
-- [Watch some crazy dudes code for 20 hours](https://www.youtube.com/watch?v=0mVbNp1ol_w&t=18382s)
 
 #### React Under-the-Hood
 
@@ -102,5 +98,3 @@ A lot happens to make React work. If you are curious, here are some technical re
 - [React Fiber Overview - React's main algorithm](https://www.youtube.com/watch?v=ZCuYPiUIONs&t=28s)
 - [React Fiber Overview Article](https://github.com/acdlite/react-fiber-architecture)
 - [React Fiber Deep Dive](https://www.youtube.com/watch?v=0ympFIwQFJw)
-- [React Fiber Article](https://blog.logrocket.com/deep-dive-react-fiber/)
-- [React Theoretical Concepts](https://github.com/reactjs/react-basic)

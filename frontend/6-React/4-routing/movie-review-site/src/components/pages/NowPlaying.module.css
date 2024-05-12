@@ -45,8 +45,8 @@
     border-radius: 2% 0 0 0;
 }
 
-.rating {
-    font-weight: 900;
+.rating, .release {
+    font-weight: 400;
 }
 
 .star {

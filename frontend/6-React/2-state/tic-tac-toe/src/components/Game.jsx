@@ -29,6 +29,7 @@ const Game = () => {
         boardCopy[i] = xIsNext ? 'X' : 'O'
         // update the board state with the mutated boardCopy array
         setBoard(boardCopy)
+      
         // update the xIsNext state
         setXisNext(!xIsNext); // flip the boolean value
     }

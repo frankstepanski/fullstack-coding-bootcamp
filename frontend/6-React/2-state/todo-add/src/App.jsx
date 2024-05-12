@@ -29,7 +29,6 @@ function App() {
       <TodoAdd addTodo = {addTodo} />
       <TodoList
              todos = {todos}
-             editTodo = {editTodo}
       />
     </>
   );

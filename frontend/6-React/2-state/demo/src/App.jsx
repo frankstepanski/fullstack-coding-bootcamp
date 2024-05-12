@@ -35,7 +35,7 @@ import Greeting from './Greeting'
 
 
 function App() {
-    const [message, setMessage] = useState("this is a greeting");
+    const [message, setMessage] = useState("this is a greeting"); // creates a state variable and a setter function
     const [anotherMessage, setAnotherMessage] = useState("this is another greeting");
     const [temperature, setTemperature] = useState(70)
 
@@ -51,6 +51,8 @@ function App() {
 
        */
 
+      // wrapping our setter function in a function
+      // this is allows use to do some 'processing' before updating the state
        setMessage(message)
     }
 
@@ -66,8 +68,10 @@ function App() {
             <Greeting 
                 message = {message} 
                 anotherMessage = {anotherMessage} 
+                
                 changeMessage = {handleMessageChange}
                 changeAnotherMessage = {handleAnotherMessageChange}
+                
                 temperature = {temperature}
                 changeTemperature = {setTemperature}
             />

@@ -8,25 +8,27 @@
  *
  */
 
+import styles from "./Home.module.css";
+
 const Home = (props) => {
 
     return (
         <>
-            <section className="jumbotron">
+            <section className={styles.jumbotron}>
                 <h1>Welcome to the Movie Reviewer Database</h1>
-                <p>Comment and rate your favorite movies as well as add your own movies to the database.</p>
+                <p>Comment and rate your favorite movies as well as see what is playing in the theaters now.</p>
                 <p>Fun for the whole family. 🍿 </p>
             </section>
 
-            <section className="featured-movies-container">
+            <section className={styles.featuredMoviesContainer}>
                 <h2>Featured Movies:</h2>
-                <div className="featured-movies-list">
+                <div className={styles.featuredMoviesList}>
                 {
                     props.movies.map((item, index) => {
                         return (
-                            <div key={index} className="featured-movie">
+                            <div key={index} className={styles.featuredMovie}>
                                 <a href="#"><img src={item.image} alt={item.alt} /></a>
-                                <div className="featured-movie-info">
+                                <div className={styles.featuredMovieInfo}>
                                     <h3>{item.title}</h3>
                                 </div>
                             </div>

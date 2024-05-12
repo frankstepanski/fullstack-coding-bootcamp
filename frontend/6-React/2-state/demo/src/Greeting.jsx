@@ -60,6 +60,8 @@ function Greeting({
               update message
         </button>
 
+        <br/><br/>
+
         {/* uncontrolled form field */}
         <input type="text" 
                placeholder = "enter text" 

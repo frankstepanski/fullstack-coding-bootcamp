@@ -43,6 +43,7 @@ function UseEffectBasic() {
   // note: useEffect runs inside a callback function
   useEffect(() => {
     
+    // code inside useEffect in the callback function
     let URL = `https://jsonplaceholder.typicode.com/todos/${randomID}`
 
     fetch(URL)

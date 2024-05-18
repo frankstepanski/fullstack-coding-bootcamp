@@ -19,11 +19,13 @@ function App() {
         }
       };
    
+      // define async function in useEffect
       async function fetchData() {
 
         try {
 
           const todosData = await fetchAPI(URL, options);
+          // sorts the todos by id in descending order
           todosData.sort((a, b) => (a.id < b.id) ? 1 : -1)
           setTodos(todosData);
 
@@ -34,6 +36,7 @@ function App() {
         }
       }
 
+      // Calling the async function defined in useEffect
       fetchData();
 
     }, [])
@@ -55,12 +58,17 @@ function App() {
 
       try {
       
+        // Step 1: Posting the data to the API
+        // Executing the POST request to add a new todo in my API
          const newTodo = await fetchAPI(URL, options);
          const newTodos = [...todos, newTodo].sort((a, b) => (a.id < b.id) ? 1 : -1)
 
-         // => Updating state, not re-fetching
+         // Step 2: Posting (adding) the data to state
+         // => Updating state, triggering re-render with new todo
          setTodos(newTodos)
 
+         // Note: By adding the new todo to the API first, 
+         // this is called pessimistic updating (as opposed to optimistic updating)
       } catch (error) {
 
          console.error('Error:', error.message);

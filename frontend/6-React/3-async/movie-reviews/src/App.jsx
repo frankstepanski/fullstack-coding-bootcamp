@@ -14,8 +14,11 @@ export default function App() {
 
   const addReview = (movieID, review) => {
 
+    // Create a new array of movies
     const newMovies = [...movies];
+    // Find the movie by id (the review is for a particular movie)
     const index = newMovies.findIndex(movie => movie.id === movieID)
+    // Then add the review to the movie's reviews array
     newMovies[index].reviews.push(review);
     setMovies(newMovies);
 

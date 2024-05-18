@@ -67,7 +67,7 @@ function GiphySearch({initialQuery}) {
         fetchImage(evt.target.query.value)
     }
 
-    // useEffect is running a funcion
+    // useEffect is running a funcion defined outside of the useEffect
     // note: This useEffect only runs once because initialQuery never changes
     useEffect(fetchImage, [initialQuery]);
 

@@ -1,6 +1,6 @@
 import React from "react";
-import MoviesMenu from '../MoviesMenu';
-import MovieList from '../MovieList';
+import MoviesMenu from '../layout/MoviesMenu';
+import MovieList from '../presentational/MovieList';
 import styles from "./Movies.module.css";
 
 const Movies = ({

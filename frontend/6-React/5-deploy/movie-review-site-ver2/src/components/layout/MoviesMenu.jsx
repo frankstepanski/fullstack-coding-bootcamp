@@ -1,5 +1,5 @@
-import Filters from './Filters'
-import Pagination from './Pagination';
+import Filters from '../containers/Filters'
+import Pagination from '../containers/Pagination';
 import styles from "./MoviesMenu.module.css";
 
 const MoviesMenu = ({

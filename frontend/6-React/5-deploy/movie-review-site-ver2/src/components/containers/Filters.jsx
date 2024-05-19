@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import CheckBox from "./CheckBox";
+import CheckBox from "../presentational/CheckBox";
 import styles from "./Filters.module.css";
 
 const Filters = ({handleFilters}) => {

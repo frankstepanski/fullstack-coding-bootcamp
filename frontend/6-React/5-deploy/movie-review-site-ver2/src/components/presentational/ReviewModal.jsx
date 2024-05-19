@@ -1,4 +1,4 @@
-import ReviewForm from "./ReviewForm";
+import ReviewForm from "../containers/ReviewForm";
 import Modal from 'react-modal';
 import styles from "./ReviewModal.module.css";
 

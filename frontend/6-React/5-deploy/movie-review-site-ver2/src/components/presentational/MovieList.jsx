@@ -1,4 +1,4 @@
-import Movie from "./Movie";
+import Movie from "../containers/Movie";
 import styles from "./MovieList.module.css";
 
 const MovieList = ({movies, addReview}) => {

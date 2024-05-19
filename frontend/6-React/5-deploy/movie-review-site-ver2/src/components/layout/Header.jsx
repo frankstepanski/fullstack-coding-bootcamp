@@ -1,4 +1,4 @@
-import Navigation from "../Navigation.jsx";
+import Navigation from "./Navigation.jsx";
 import styles from "./Header.module.css";
 
 const Header = ({...props}) =>{

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import ReviewList from "./ReviewList";
-import ReviewModal from "./ReviewModal";
-import YouTube from "./YouTube";
-import Categories from "./Categories";
+import ReviewList from "../presentational/ReviewList";
+import ReviewModal from "../presentational/ReviewModal";
+import YouTube from "../presentational/YouTube";
+import Categories from "../presentational/Categories";
 import styles from "./Movie.module.css";
 
 const Movie = ({movie, addReview}) => {

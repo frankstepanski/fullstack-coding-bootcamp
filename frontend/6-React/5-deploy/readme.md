@@ -50,9 +50,9 @@ There are many platforms available for deploying web applications, each with its
 
 [Vercel](https://vercel.com/) is a platform for deploying web applications with a focus on serverless functions and Jamstack architecture.
 
-To deploy a React application to Vercel, follow these steps:
+#### To deploy a React application to Vercel, follow these steps: ####
 
-1. Install the Vercel CLI:
+Install the Vercel CLI:
 
 ```bash 
 npm install -g vercel
@@ -74,7 +74,7 @@ Follow the prompts to log in to your Vercel account and deploy your application.
 
 Once the deployment is complete, you will receive a URL where your application is hosted.
 
-2. Deploying with Vercel GitHub Integration
+#### Deploying with Vercel GitHub Integration ####
 
 Vercel provides GitHub integration, allowing you to deploy your application automatically whenever you push changes to a GitHub repository.
 

@@ -40,11 +40,11 @@ There are many platforms available for deploying web applications, each with its
 
 ### Deployment Tools
 
-**CLI:** Many deployment platforms provide a CLI (Command Line Interface) tool for deploying applications from the command line.
+- **CLI:** Many deployment platforms provide a CLI (Command Line Interface) tool for deploying applications from the command line.
 
-**Git Integration:** Some platforms allow you to deploy applications directly from a Git repository, making it easy to automate the deployment process.
+- **Git Integration:** Some platforms allow you to deploy applications directly from a Git repository, making it easy to automate the deployment process.
 
-**Continuous Deployment:** Continuous Deployment tools like GitHub Actions, CircleCI, or Travis CI can automate the deployment process whenever changes are pushed to a repository.
+- **Continuous Deployment:** Continuous Deployment tools like GitHub Actions, CircleCI, or Travis CI can automate the deployment process whenever changes are pushed to a repository.
 
 ### Deployment to Vercel
 

@@ -28,15 +28,15 @@ This could involve copying the files to a web server, cloud storage, or a conten
 
 There are many platforms available for deploying web applications, each with its own features and pricing models.
 
-**Vercel:** Vercel is a platform for deploying web applications with a focus on serverless functions and Jamstack architecture.
+- **Vercel:** Vercel is a platform for deploying web applications with a focus on serverless functions and Jamstack architecture.
 
-**Netlify:** Netlify is another popular platform for deploying web applications, offering features like continuous deployment, serverless functions, and form handling.
+- **Netlify:** Netlify is another popular platform for deploying web applications, offering features like continuous deployment, serverless functions, and form handling.
 
-**Heroku:** Heroku is a cloud platform that supports multiple programming languages and frameworks, making it a versatile choice for deploying web applications.
+- **Heroku:** Heroku is a cloud platform that supports multiple programming languages and frameworks, making it a versatile choice for deploying web applications.
 
-**AWS:** Amazon Web Services (AWS) provides a wide range of services for deploying web applications, including EC2 for virtual servers, S3 for storage, and Lambda for serverless functions.
+- **AWS:** Amazon Web Services (AWS) provides a wide range of services for deploying web applications, including EC2 for virtual servers, S3 for storage, and Lambda for serverless functions.
 
-**Google Cloud Platform:** Google Cloud Platform offers services like App Engine for deploying web applications, Cloud Storage for storage, and Cloud Functions for serverless functions.
+- **Google Cloud Platform:** Google Cloud Platform offers services like App Engine for deploying web applications, Cloud Storage for storage, and Cloud Functions for serverless functions.
 
 ### Deployment Tools
 

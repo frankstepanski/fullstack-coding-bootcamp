@@ -11,18 +11,18 @@ Effective deployment ensures that the application runs efficiently, securely, an
 
 ### Key Steps in the Deployment Process
 
-**Build:** Create a production build using your chosen build tool. 
+- **Build:** Create a production build using your chosen build tool. 
 This process typically involves running a command that optimizes your app for performance by minifying 
 JavaScript files, optimizing images, and removing unnecessary.
 
-**Output:** The output is usually a folder (often named dist or build) containing static files.
+- **Output:** The output is usually a folder (often named dist or build) containing static files.
 
-**Deploy:** Transfer the production build to the target environment.
+- **Deploy:** Transfer the production build to the target environment.
 This could involve copying the files to a web server, cloud storage, or a content delivery network (CDN).
 
-**Upload:** Use the platform's UI, CLI, or integrate with a Git repository to deploy the build folder.
+- **Upload:** Use the platform's UI, CLI, or integrate with a Git repository to deploy the build folder.
 
-**Configure:** Set up any necessary configurations, such as environment variables, routing rules, or security settings.
+- **Configure:** Set up any necessary configurations, such as environment variables, routing rules, or security settings.
 
 ### Deployment Platforms
 

@@ -94,5 +94,7 @@ Vercel will build and deploy your application whenever you push changes to the s
 
 ### Example Deployment
 
+![Vercel Deployment](vercel-deployment.png)
+
 [Movie Review App](https://vercel-react-deploy.vercel.app/)
 

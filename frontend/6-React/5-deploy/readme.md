@@ -48,7 +48,7 @@ There are many platforms available for deploying web applications, each with its
 
 ### Deployment to Vercel
 
-Vercel is a platform for deploying web applications with a focus on serverless functions and Jamstack architecture.
+[Vercel](https://vercel.com/) is a platform for deploying web applications with a focus on serverless functions and Jamstack architecture.
 
 To deploy a React application to Vercel, follow these steps:
 

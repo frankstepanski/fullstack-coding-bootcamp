@@ -39,4 +39,5 @@ Traditional web servers like Apache or Nginx can also be used to serve static fi
 
 For a Single Page Application (SPA), you may need to configure server-side routing to handle client-side routing.
 
+Here is a deployed version of our Movie Reviewer App: [Movie Review App](https://vercel-react-deploy.vercel.app/)
 

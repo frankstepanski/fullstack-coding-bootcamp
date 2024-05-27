@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Counter from '../components/counter';
 
 export default function Page() {
     return (
@@ -11,6 +12,8 @@ export default function Page() {
           <Link prefetch = {true} href="/movies">Movies</Link>
           <Link prefetch = {true} href="/blog">Blog</Link>
       
+          <Counter />
+
       </main>
     );
   }

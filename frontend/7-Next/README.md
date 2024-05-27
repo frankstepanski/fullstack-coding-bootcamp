@@ -45,7 +45,7 @@ When a user requests a page, the server will send a minimal HTML page to the cli
 
 To create a client component you use the 'use client' directive at the top of the file.
 
-![server vs client compoments](/images/server-vs-client-components.png)
+![server vs client compoments](images/server-vs-client-components.png)
 
 ### Data Fetching
 

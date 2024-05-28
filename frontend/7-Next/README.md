@@ -6,6 +6,22 @@ full-stack applications. Next.js builds on React and provides additional feature
 You can use React to build your UI and then incrementally adopt Next.js features
 to solve common application requirements such as routing, data fetching, etc.
 
+### Major Features of Next.js
+
+- File-system based routing
+- Hybrid rendering: SSR (server-side rendering), SSG (static site generation) and CSR (client-side rendering)
+- Image and font optimization
+- Automatic bundle-splitting and lazy-loading
+- Improved SEO
+
+Next.js is normally used to build ***fullstack*** applications. You can use Next.js to build the frontend 
+and backend of your application. Next.js provides an API route feature that allows you to create API endpoints
+within your Next.js application. This eliminates the need for a separate backend server 
+(eg. Node + Express, Python + Flask, etc).
+
+***Note:*** There is no requirement that you have to use Next.js for the backend. You can use any backend technology
+but Next.js provides a convenient way to build fullstack applications.
+
 ### How React does Client-side Rendering
 
 Content is rendered in the browser by the client fetching a bundle JS file from the server.
@@ -43,24 +59,6 @@ Since they are not hydrated on the client, they are **not interactive**. They ar
 
 Both client and server components [can be used together](https://nextjs.org/docs/app/building-your-application/rendering#rendering-environments) 
 in the same application as well as both being cached.
-
-### Major Features of Next.js
-
-- File-system based routing
-- Hybrid rendering: SSR (server-side rendering), SSG (static site generation) and CSR (client-side rendering)
-- Image and font optimization
-- Automatic bundle-splitting and lazy-loading
-- SEO
-
-#### Fullstack Framework
-
-Next.js can be used to build ***fullstack*** applications. You can use Next.js to build the frontend 
-and backend of your application. Next.js provides an API route feature that allows you to create API endpoints
-within your Next.js application. This eliminates the need for a separate backend server 
-(eg. Node + Express, Python + Flask, etc).
-
-***Note:*** There is no requirement that you have to use Next.js for the backend. You can use any backend technology
-but Next.js provides a convenient way to build fullstack applications.
 
 ### Server-side Rendering (SSR)
 

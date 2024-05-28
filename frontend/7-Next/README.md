@@ -68,7 +68,7 @@ Server components allow you to render components on the server and reduce the am
 
 You can interweave server components with client components. React will seemlessly manage the rendering of both.
 
-All components inside the /app directory are Server Components by default.
+**Note:** All components inside the /app directory are Server Components by default.
 
 ![server vs client compoments](images/client-vs-server-component.png)
 

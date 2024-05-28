@@ -86,8 +86,6 @@ https://nextjs.org/docs/app/building-your-application/rendering/client-component
 
 ### Data Fetching (on the server)
 
-Data fetching can be done in Next.js on a page-by-page basis.
-
 You can choose the data fetching strategy that best fits the specific page requirements.
 
 #### Static Data Fetching is the default behavior in Next.js. 

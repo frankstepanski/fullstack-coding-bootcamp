@@ -72,7 +72,7 @@ All components inside the /app directory are Server Components by default.
 
 ![server vs client compoments](images/client-vs-server-component.png)
 
-[Complete Checklist](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns)
+[Complete Checklist](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns#when-to-use-server-and-client-components)
 
 
 ### Client-side Rendering (CSR)

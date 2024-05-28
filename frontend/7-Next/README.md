@@ -26,9 +26,7 @@ reduce the initial load time. And normally the bundle JS file is smaller because
 rendered the page.
 
 The process of adding the JavaScript to the page is called ***hydration***. React will take over the page
-and manage the rendering of the page from that point on. 
-
-Hydration is not a Next.js feature. It was developed by the React team (as early as React 16). Next.js
+and manage the rendering of the page from that point on. Hydration is not a Next.js feature. It was developed by the React team (as early as React 16). Next.js
 just takes advantage of it from the [hydrateRoot](https://react.dev/reference/react-dom/client/hydrateRoot)
 function in the react-dom package.
 

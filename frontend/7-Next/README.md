@@ -1,7 +1,7 @@
 ## Next.js 
 
 Next.js is a flexible React framework that gives you building blocks to create fast web
-full-stack applications. Next.js buils on React and provides additional features and optimizations. 
+full-stack applications. Next.js builds on React and provides additional features and optimizations. 
 
 You can use React to build your UI and then incrementally adopt Next.js features
 to solve common application requirements such as routing, data fetching, etc.
@@ -9,7 +9,7 @@ to solve common application requirements such as routing, data fetching, etc.
 ### How React does Client side Rendering
 
 Content is rendered in the browser by the client fetching a bundle JS file from the server.
-This allows for dynamic content to interact fairy quickly with the user without having to 
+This allows for dynamic content to interact fairly quickly with the user without having to 
 send a request to the server for each interaction.
 
 But this can be slow for the initial page load because the client has to wait for the bundle to be

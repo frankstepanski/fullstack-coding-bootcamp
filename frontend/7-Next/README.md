@@ -35,7 +35,7 @@ function in the react-dom package.
 There are two types of **components** in Next.js:
 
 - Client: Rendered on the server and hydrated on the client.
-- Server: Rendered on the server. No hydration on the client.
+- Server: Rendered on the serve, and no hydration on the client.
 
 Server components can fetch data on the server and reduce the amount of JavaScript sent to the client.
 No need to worry about private API keys or sensitive data being sent from the client. It is all done on the server.

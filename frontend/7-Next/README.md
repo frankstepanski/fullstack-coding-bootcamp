@@ -6,7 +6,7 @@ full-stack applications. Next.js builds on React and provides additional feature
 You can use React to build your UI and then incrementally adopt Next.js features
 to solve common application requirements such as routing, data fetching, etc.
 
-### Major Features of Next.js
+### Major Features
 
 - File-system based routing
 - Hybrid rendering: SSR (server-side rendering), SSG (static site generation) and CSR (client-side rendering)

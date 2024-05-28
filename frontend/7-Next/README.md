@@ -6,7 +6,7 @@ full-stack applications. Next.js builds on React and provides additional feature
 You can use React to build your UI and then incrementally adopt Next.js features
 to solve common application requirements such as routing, data fetching, etc.
 
-### How React does Client side Rendering
+### How React does Client-side Rendering
 
 Content is rendered in the browser by the client fetching a bundle JS file from the server.
 This allows for dynamic content to interact fairly quickly with the user without having to 

@@ -12,7 +12,6 @@ to solve common application requirements such as routing, data fetching, etc.
 - Hybrid rendering: SSR (server-side rendering), SSG (static site generation) and CSR (client-side rendering)
 - Image and font optimization
 - Automatic bundle-splitting and lazy-loading
-- Improved SEO
 
 Next.js is normally used to build ***fullstack*** applications. You can use Next.js to build the frontend 
 and backend of your application. Next.js provides an API route feature that allows you to create API endpoints

@@ -20,7 +20,7 @@ within your Next.js application. This eliminates the need for a separate backend
 (eg. Node + Express, Python + Flask, etc).
 
 ***Note:*** There is no requirement that you have to use Next.js for the backend. You can use any backend technology
-but Next.js provides a convenient way to build fullstack applications.
+but Next.js provides a convenient way to build fullstack applications with the stack that you are already using.
 
 ### How React does Client-side Rendering
 

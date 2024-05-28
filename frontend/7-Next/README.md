@@ -46,12 +46,17 @@ and manage the rendering of the page from that point on. Hydration is not a Next
 just takes advantage of it from the [hydrateRoot](https://react.dev/reference/react-dom/client/hydrateRoot)
 function in the react-dom package.
 
-### Client and Server Components
+### Server-side Rendering (SSR)
+
+The default behavior of Next.js is to render pages on the server-side. This means that when a user requests a page,
+the server will render the page and send the HTML to the client. This is useful for SEO and performance.
+
+#### Server Components
 
 There are two types of **components** in Next.js:
 
 - Client: Rendered on the server and hydrated on the client.
-- Server: Rendered on the serve, and no hydration on the client.
+- Server: Rendered on the server, and no hydration on the client.
 
 Server components can fetch data on the server and reduce the amount of JavaScript sent to the client.
 No need to worry about private API keys or sensitive data being sent from the client. It is all done on the server.
@@ -60,18 +65,7 @@ Since they are not hydrated on the client, they are **not interactive**. They ar
 Both client and server components [can be used together](https://nextjs.org/docs/app/building-your-application/rendering#rendering-environments) 
 in the same application as well as both being cached.
 
-### Server-side Rendering (SSR)
-
-The default behavior of Next.js is to render pages on the server-side. This means that when a user requests a page,
-the server will render the page and send the HTML to the client. This is useful for SEO and performance.
-
-https://nextjs.org/docs/app/building-your-application/rendering/server-components
-
-
-
-#### Server Components
-
-They allow you to render components on the server and reduce the amount of JavaScript sent to the client.
+Server components allow you to render components on the server and reduce the amount of JavaScript sent to the client.
 
 You can interweave server components with client components. React will seemlessly manage the rendering of both.
 
@@ -81,7 +75,8 @@ All components inside the /app directory are Server Components by default.
 
 [Complete Checklist](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns)
 
-#### Client-side Rendering (CSR)
+
+### Client-side Rendering (CSR)
 
 Next.js can also render pages on the client-side. This is useful for pages that change often or require user interaction.
 When a user requests a page, the server will send a minimal HTML page to the client. The client will then fetch the data

@@ -90,12 +90,12 @@ Data fetching can be done in Next.js on a page-by-page basis.
 
 You can choose the data fetching strategy that best fits the specific page requirements.
 
-#### Static Data Fetching (aka Static Site Generation SSG) is the default behavior in Next.js. 
+#### Static Data Fetching is the default behavior in Next.js. 
 
   - Data is fetched at build time once and then cached. The cached data is re-used on each additional request.
   - This is useful for pages that do not change often.
 
-#### Static Data Fetching with Revalidation or (aka Incremental Static Regeneration ISR)
+#### Static Data Fetching with Revalidation
 
   - Data is fetched at build time and then cached. The cached data is re-used on each additional request.
   - Cached data is re-used on each request until it reaches a specificed interval of time.

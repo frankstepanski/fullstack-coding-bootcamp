@@ -97,7 +97,7 @@ You can choose the data fetching strategy that best fits the specific page requi
 
 #### Static Data Fetching with Revalidation
 
-  - Data is fetched at build time and then cached. The cached data is re-used on each additional request.
+  - Data is fetched at build time and then cached. 
   - Cached data is re-used on each request until it reaches a specificed interval of time.
   - After the specified time interval, Next.js revalidates the data, and invalidates the previous cache.
   - This method is useful for pages that change often but do not require real-time data.

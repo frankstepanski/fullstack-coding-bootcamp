@@ -84,7 +84,7 @@ To create a client component you use the 'use client' directive at the top of th
 
 https://nextjs.org/docs/app/building-your-application/rendering/client-components
 
-### Data Fetching
+### Data Fetching (on the server)
 
 Data fetching can be done in Next.js on a page-by-page basis.
 

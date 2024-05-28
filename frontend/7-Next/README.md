@@ -88,10 +88,27 @@ https://nextjs.org/docs/app/building-your-application/rendering/client-component
 
 You can choose the data fetching strategy that best fits the specific page requirements.
 
+Data fetching in Next.js uses the Fetch API in the /app folder.
+
+The Fetch API works on top of the native fetch() Web API, which makes use of the async/await functions and
+returns a promise. It allows caching and revalidation options within the fetch request itself. 
+
 #### Static Data Fetching is the default behavior in Next.js. 
 
   - Data is fetched at build time once and then cached. The cached data is re-used on each additional request.
   - This is useful for pages that do not change often.
+
+  By default, the fetch call is set to static data fetching from the cache.
+
+  ```javascript
+  async function fetchData() {
+      const res = await fetch(
+          `https://jsonplaceholder.typicode.com/posts`,
+      );
+      const data = await res.json();
+      return data;
+  }
+  ```
 
 #### Static Data Fetching with Revalidation
 
@@ -100,36 +117,7 @@ You can choose the data fetching strategy that best fits the specific page requi
   - After the specified time interval, Next.js revalidates the data, and invalidates the previous cache.
   - This method is useful for pages that change often but do not require real-time data.
 
-#### Dynamic Data Fetching (aka Server-side Rendering SSR)
-
-  - Data is fetched on each request.
-  - This method is useful for pages that require real-time data (eg. shopping cart, user dashboard, etc).
-  - There is no caching of data. Performance can be slower than SSG or ISR.
-
-### Fetching Data on the Server with fetch
-
-Data fetching in Next.js uses the Fetch API in the /app folder.
-
-The Fetch API works on top of the native fetch() Web API, which makes use of the async/await functions and
-returns a promise. It allows caching and revalidation options within the fetch request itself. 
-
-#### Static Data Fetching or Static Site Generation (SSG)
-
-By default, the fetch call is set to static data fetching from the cache.
-
-```javascript
-async function fetchData() {
-    const res = await fetch(
-        `https://jsonplaceholder.typicode.com/posts`,
-    );
-    const data = await res.json();
-    return data;
-}
-```
-
-#### Static Data Fetching with Revalidation or Incremental Static Regeneration (ISR)
-
-You use the [next.revalidate option](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#time-based-revalidation) 
+  You use the [next.revalidate option](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#time-based-revalidation) 
 of fetch to set the cache lifetime of a resource (in seconds).
 
 ```javascript
@@ -145,9 +133,13 @@ async function fetchData() {
 }
 ```
 
-#### Dynamic Data Fetching or Server-side Rendering (SSR)
+#### Dynamic Data Fetching (aka Server-side Rendering SSR)
 
-This request should be re-fetched on every request.
+  - Data is fetched on each request.
+  - This method is useful for pages that require real-time data (eg. shopping cart, user dashboard, etc).
+  - There is no caching of data. Performance can be slower than SSG or ISR.
+
+  This request should be re-fetched on every request.
 
 ```javascript
 async function fetchData() {
@@ -161,6 +153,7 @@ async function fetchData() {
     return data;
 }
 ```
+
 
 ### Dynamic Routes
 

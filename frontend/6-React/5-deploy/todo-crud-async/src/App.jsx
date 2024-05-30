@@ -76,13 +76,108 @@ function App() {
     
   };
   
+  const completeTodo = async (id) => {
+
+    const temporaryTodos = [...todos];
+    const index = temporaryTodos.findIndex(todo => todo.id === id);
+    temporaryTodos[index].isCompleted = !temporaryTodos[index].isCompleted;
+
+    const updatedTodo = {
+      text: temporaryTodos[index].text,
+      isCompleted: temporaryTodos[index].isCompleted
+    }
+
+    let options = {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(updatedTodo)
+    };
+
+    try {
+
+      await fetch(`${URL}/${id}`, options)
+
+      // => Updating state, not re-fetching
+      setTodos(temporaryTodos);
+
+    } catch (error) {
+
+      console.error('Error:', error.message);
+    }
+
+  };
+
+  const deleteTodo = async (id) => {
+    
+    let options = {
+      method: 'DELETE'
+    };
+
+    try {
+
+       const resDelete = await fetch(`${URL}/${id}`, options);
+
+       if (!resDelete.ok) {
+          throw new Error('DELETE failed')
+       } 
+    
+       // => Re-fetching API to see latest changes (optional)
+       const res = await fetch(URL);
+       const data = await res.json();
+
+       setTodos(data);
+
+    } catch(error) {
+
+      console.error('Error:', error.message);
+    }
+  };
+
+
+const editTodo = async (id, text) => {
+
+    try {
+    
+        const temporaryTodos = [...todos];
+        const index = temporaryTodos.findIndex(todo => todo.id === id);
+        temporaryTodos[index].text = text;
+
+        const updatedTodo = {
+          text,
+          isCompleted: temporaryTodos[index].isCompleted
+        }
+
+        let options = {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(updatedTodo)
+        };
+
+        await fetch(`${URL}/${id}`, options)
+
+        // => Updating state, not re-fetching
+        setTodos(temporaryTodos);
+  
+    } catch(error) {
+
+      console.error('Error:', error.message);
+    }
+  };
 
   return (
     <>
       <h2>Todo App</h2>
       <h4>Add new todos via the input field:</h4>
       <TodoAdd addTodo = {addTodo} />
-      <TodoList todos = {todos}
+      <TodoList
+             todos = {todos}
+             completeTodo={completeTodo}
+             deleteTodo = {deleteTodo}
+             editTodo = {editTodo}
       />
     </>
   );

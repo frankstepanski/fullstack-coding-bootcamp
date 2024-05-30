@@ -1,12 +1,15 @@
 import React from 'react';
 import TodoItem from './TodoItem';
 
-function TodoList({todos}) {
+function TodoList({todos, completeTodo, deleteTodo, editTodo}) {
 
     const listTodos = todos.map((todo) => {
-            return <TodoItem 
+            return <TodoItem
                         key = {todo.id} 
                         todo={todo} 
+                        completeTodo = {completeTodo} 
+                        deleteTodo = {deleteTodo} 
+                        editTodo = {editTodo} 
                     />
             });
 
